@@ -20,13 +20,13 @@ OBJS = main.o WordleApplication.o
 
 # How do we build the executable?
 
-hello: $(OBJS)
+wordle: $(OBJS)
 	$(CXX) $(CXXFLAGS) -o $@ $^ $(LDFLAGS) 
 
 # How do we clean up after ourselves?
 
 clean:
-	rm -f hello $(OBJS)
+	rm -f wordle $(OBJS)
 
 
 # Define your source files and target here:
